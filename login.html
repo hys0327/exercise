@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지 | PIM</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/variable.css">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="wrap">
+        <main>
+            <section>
+                <div class="login_content">
+                    <div class="pim_login">
+                        <div class="login_header">
+                            <h1>PIM</h1>
+                            <p>Personal Information Manager</p>
+                        </div>
+                        <div class="login_main">
+                            <div class="id_container">
+                                <input type="text" name="id" autocomplete="off" required />
+                                <label for="id" class="id">
+                                    <span class="user_id">ID</span>
+                                </label>
+                            </div>
+                            <div class="pw_container">
+                                <input type="text" name="pw" autocomplete="off" required />
+                                <label for="pw" class="pw">
+                                    <span class="user_pw">PASSWARD</span>
+                                </label>
+                            </div>
+                            <div class="check_remember">
+                                <input type="checkbox" name="remember">
+                                <label for="remember" class="remember">
+                                    <span class="text">Remember Me</span>
+                                </label>
+                            </div>
+                        </div>
+                        <a href="left.html" class="login_btn">LOGIN</a> 
+                    </div>
+                    <div class="content2"></div>
+                    <div class="content3"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="script/login.js"></script>
+</html>

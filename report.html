@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/variable.css">
+    <link rel="stylesheet" href="styles/left.css">
+    <link rel="stylesheet" href="styles/report.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- <header></header> -->
+        <main>
+            <section>
+                <div class="common_left">
+                    <div class="common_header">
+                        <a href="#" class="logo"></a>
+                        <h1>PIM</h1>
+                    </div>
+                    <div class="common_content">
+                        <p class="boundary_text">Main</p>
+                        <div class="common_menu">
+                            <a href="report.html" class="menu report">
+                                <span class="icon icon_report"></span>
+                                <p>리포트</p>
+                            </a>
+                            <a href="login.html" class="menu logout">
+                                <span class="icon icon_logout"></span>
+                                <p>로그 아웃</p>
+                            </a>
+                        </div>
+                        <div class="user_setting">
+                            <div class="profile"></div>
+                            <div class="user_info">
+                                <p>PIM 담당자</p>
+                                <p>Admin</p>
+                            </div>
+                            <div class="user_btn"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="report_content">
+                    <div class="title">
+                        <h1>PIM</h1>
+                        <p class="none">Reporting Page of the PI</p>
+                    </div>
+                    <div class="search_container">
+                        <div class="search">
+                            <div class="select_box">
+                                <button class="label">
+                                    <span class="text">검색 옵션</span>
+                                    <span class="icon_arrow_down"></span>
+                                </button>
+                                <ul class="option">
+                                    <li class="item">item1</li>
+                                    <li class="item">item2</li>
+                                    <li class="item">item3</li>
+                                    <li class="item">item4</li>
+                                    <li class="item">item5</li>
+                                </ul>
+                            </div>
+                            <div class="input_box">
+                                <input type="text" placeholder="검색어를 입력해주세요">
+                                <span class="icon_search"></span>
+                            </div>
+                        </div>
+                        <div class="button_box">
+                            <button type="button" class="upload">
+                                <span class="icon icon_upload"></span>
+                                <span class="text">Upload</span>
+                            </button>
+                            <button type="button" class="delete"><span class="icon icon_delete"></span><span class="text">Delete</span></button>
+                            <!-- <button type="button" class="open"><span class="icon icon_open"></span><span class="text">Open</span></button> -->
+                        </div>
+                    </div>
+                    <div class="board_container">
+                        <ul class="board_title">
+                            <li class="title">
+                                <input type="checkbox">
+                            </li>
+                            <li class="title">
+                                <button type="button">
+                                    <span class="text">설정버전</span>
+                                </button>
+                            </li>
+                            <li class="title">
+                                <button type="button">
+                                    <span class="text">처리 시작</span>
+                                    <span class="icon icon_arrow_down"></span>
+                                </button>
+                            </li>
+                            <li class="title">
+                                <button type="button">
+                                    <span class="text">처리 종료</span>
+                                    <span class="icon icon_arrow_down"></span>
+                                </button>
+                            </li>
+                            <li class="title">
+                                <button type="button">
+                                    <span class="text">문서 명</span>
+                                </button>
+                            </li>
+                            <li class="title">
+                                <button type="button">
+                                    <span class="text">위험도</span>
+                                    <span class="icon icon_arrow_down"></span>
+                                </button>
+                            </li>
+                            <li class="title">
+                                <button type="button">
+                                    <span class="text">요청자</span>
+                                </button>
+                            </li>
+                            <li class="title">
+                                <button type="button">
+                                    <span class="text">상태</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="board_content_container">
+                            <ul class="board_content">
+                                <li class="checkbox"><input type="checkbox"></li>
+                                <li class="version"><span class="text">1.21</span></li>
+                                <li class="start_date"><span class="text">23-07-07 16:48:33</span></li>
+                                <li class="end_date"><span class="text">23-07-07 16:50:12</span></li>
+                                <li class="file_name">
+                                    <button type="button">
+                                        <span class="text">2016년도_제9회_기업재난관리자_재해경감활동 실무센터장</span>
+                                    </button>
+                                </li>
+                                <li class="risk">
+                                    <span class="text">25%</span>
+                                    <progress class="progress" value="25" min="0" max="100"></progress>
+                                </li>
+                                <li class="requestor"><span class="text">Admin166073</span></li>
+                                <li class="status">
+                                    <div class="select_box">
+                                        <button class="label">
+                                            <span class="text">승인</span>
+                                        </button>
+                                        <ul class="option">
+                                            <li class="item"><span class="text">미처리</span></li>
+                                            <li class="item"><span class="text">처리중</span></li>
+                                            <li class="item"><span class="text">오류</span></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="detail_menu">
+                                <div class="detail_top">
+                                    <p>총<span class="count">18</span>개의 탐지 대상이 조회되었습니다.</p>
+                                    <a href="viewer.html" class="viewer_button">
+                                        <span class="icon icon_viewer"></span>
+                                        <span class="text">Open</span>
+                                    </a>
+                                </div>
+                                <div class="detail_content">
+                                    <div class="slide_container">
+                                        <div class="slide_item">
+                                            <span class="text">주민등록번호</span>
+                                            <span class="number">12</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">외국인등록번호</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">여권번호</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">전화번호</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">건강보험번호</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">의료기록번호</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">복지수급자번호</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">통장계좌번호</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">개인사업자등록번호</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">생년월일/특정일자</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">신용카드번호</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">자동차번호</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">IP/MAC ADDRESS</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                        <div class="slide_item">
+                                            <span class="text">사용자 정의</span>
+                                            <span class="number">7</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail_info">
+                                        <div class="conditions">
+                                            <ul>
+                                                <li class="c_title">개인정보 탐지 및 비식별 조치 내역</li>
+                                                <li class="c_rows">
+                                                    <span class="title">탐지 대상 명</span>
+                                                    <span class="text">주민등록번호</span>
+                                                </li>
+                                                <li class="c_rows">
+                                                    <span class="title">탐지 방식</span>
+                                                    <span class="text">식별자</span>
+                                                </li>
+                                                <li class="c_rows">
+                                                    <span class="title">비식별 조치 방식</span>
+                                                    <span class="text">식별자 부분삭제</span>
+                                                </li>
+                                                <li class="c_rows">
+                                                    <span class="title">적용 범위</span>
+                                                    <span class="text">Integer</span>
+                                                </li>
+                                                <li class="c_rows">
+                                                    <span class="title">적용 방식</span>
+                                                    <span class="text">특수문자(@)</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="list">
+                                            <ul class="title">
+                                                <li class="num">번호</li>
+                                                <li class="page_num">페이지 번호</li>
+                                                <li class="value">탐지대상 실제 값</li>
+                                                <li class="de_identification">비식별 조치 값</li>
+                                            </ul>
+                                            <div class="content_container">
+                                                <ul class="content">
+                                                    <li>1</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>2</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>3</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>4</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>5</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>6</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>7</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>8</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>9</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>10</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>11</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>12</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>13</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>14</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>15</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                                <ul class="content">
+                                                    <li>16</li>
+                                                    <li>74</li>
+                                                    <li>940327-1234567</li>
+                                                    <li>940327-*******</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="board_content">
+                                <li class="checkbox"><input type="checkbox"></li>
+                                <li class="version"><span class="text">1.21</span></li>
+                                <li class="start_date"><span class="text">23-07-07 16:48:33</span></li>
+                                <li class="end_date"><span class="text">23-07-07 16:50:12</span></li>
+                                <li class="file_name">
+                                    <button type="button">
+                                        <span class="text">2016년도_제9회_기업재난관리자_재해경감활동 실무센터장</span>
+                                    </button>
+                                </li>
+                                <li class="risk">
+                                    <span class="text">25%</span>
+                                    <progress class="progress" value="25" min="0" max="100"></progress>
+                                </li>
+                                <li class="requestor"><span class="text">Admin166073</span></li>
+                                <li class="status">
+                                    <div class="select_box">
+                                        <button class="label">
+                                            <span class="text">승인</span>
+                                        </button>
+                                        <ul class="option">
+                                            <li class="item"><span class="text">미처리</span></li>
+                                            <li class="item"><span class="text">처리중</span></li>
+                                            <li class="item"><span class="text">오류</span></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="board_content">
+                                <li class="checkbox"><input type="checkbox"></li>
+                                <li class="version"><span class="text">1.21</span></li>
+                                <li class="start_date"><span class="text">23-07-07 16:48:33</span></li>
+                                <li class="end_date"><span class="text">23-07-07 16:50:12</span></li>
+                                <li class="file_name">
+                                    <button type="button">
+                                        <span class="text">2016년도_제9회_기업재난관리자_재해경감활동 실무센터장</span>
+                                    </button>
+                                </li>
+                                <li class="risk">
+                                    <span class="text">25%</span>
+                                    <progress class="progress" value="25" min="0" max="100"></progress>
+                                </li>
+                                <li class="requestor"><span class="text">Admin166073</span></li>
+                                <li class="status">
+                                    <div class="select_box">
+                                        <button class="label">
+                                            <span class="text">승인</span>
+                                        </button>
+                                        <ul class="option">
+                                            <li class="item"><span class="text">미처리</span></li>
+                                            <li class="item"><span class="text">처리중</span></li>
+                                            <li class="item"><span class="text">오류</span></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="paging">
+                        <button class="prev"></button>
+                        <button class="num active">1</button>
+                        <button class="num">2</button>
+                        <button class="num">3</button>
+                        <button class="next"></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- <footer></footer> -->
+    </div>
+    <script src="script/report.js"></script>
+</body>
+</html>

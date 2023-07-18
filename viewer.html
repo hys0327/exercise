@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIM 뷰어 | PIM</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/variable.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/left.css">
+    <link rel="stylesheet" href="styles/viewer.css">
+</head>
+<body>
+    <div class="wrap">
+        <main>
+            <section>
+                <div class="common_left">
+                    <div class="common_header">
+                        <a href="#" class="logo"></a>
+                        <h1>PIM</h1>
+                    </div>
+                    <div class="common_content">
+                        <p class="boundary_text">Main</p>
+                        <div class="common_menu">
+                            <a href="report.html" class="menu report">
+                                <span class="icon icon_report"></span>
+                                <p>리포트</p>
+                            </a>
+                            <a href="login.html" class="menu logout">
+                                <span class="icon icon_logout"></span>
+                                <p>로그 아웃</p>
+                            </a>
+                        </div>
+                        <div class="user_setting">
+                            <div class="profile"></div>
+                            <div class="user_info">
+                                <p>PIM 담당자</p>
+                                <p>Admin</p>
+                            </div>
+                            <div class="user_btn"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="viewer_setting_content">
+                    <div class="setting">
+                        <div class="setting_header">
+                            <h1 class="title">설정</h1>
+                            <div class="setting_button">
+                                <button type="button"><span class="text">기본 설정</span></button>
+                                <button type="button"><span class="text">사용자 정의</span></button>
+                            </div>
+                        </div>
+                        <div class="basic_setting">
+                            <div class="object">
+                                <h2 class="title">탐지대상 조회</h2>
+                                <div class="object_list">
+                                    <div class="item active">
+                                        <span class="text">주민등록번호</span>
+                                        <button type="button"></button>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">여권번호</span>
+                                        <button type="button" class="none"></button>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">외국인등록번호</span>
+                                        <button type="button"></button>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">전화번호</span>
+                                        <button type="button" class="none"></button>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">의료기록번호</span>
+                                        <button type="button" class="none"></button>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">건강보험번호</span>
+                                        <button type="button" class="none"></button>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">복지수급자번호</span>
+                                        <button type="button"></button>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">통장계좌번호</span>
+                                        <button type="button"></button>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">신용카드번호</span>
+                                        <button type="button"></button>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">개인사업자등록번호</span>
+                                        <button type="button"></button>
+                                    </div>
+                                    <div class="item">
+                                        <span class="text">자격증번호</span>
+                                        <button type="button"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail_setting">
+                                <h2 class="title">세부 설정</h2>
+                                <ul>
+                                    <li class="detected_object">
+                                        <span class="title">탐지 대상</span>
+                                        <span class="content">주민등록번호</span>
+                                    </li>
+                                    <li class="detected_method select_wrap">
+                                        <span class="title">탐지 방식</span>
+                                        <span class="content">
+                                            <div class="select_box">
+                                                <button class="label">
+                                                    <span class="text">식별자</span>
+                                                    <span class="icon icon_arrow_down"></span>
+                                                </button>
+                                                <ul class="option">
+                                                    <li class="item">식별자</li>
+                                                    <li class="item">준 식별자</li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li class="de_identification_method select_wrap">
+                                        <span class="title">비식별 방식</span>
+                                        <span class="content">
+                                            <div class="select_box">
+                                                <button class="label">
+                                                    <span class="text">식별자 부분 삭제</span>
+                                                    <span class="icon icon_arrow_down"></span>
+                                                </button>
+                                                <ul class="option">
+                                                    <li class="item">휴리스틱 가명화</li>
+                                                    <li class="item">식별자 삭제</li>
+                                                    <li class="item">식별자 부분삭제</li>
+                                                    <li class="item">데이터 마스킹</li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <h2 class="title">비식별 세부 설정</h2>
+                                <ul>
+                                    <li class="range select_wrap">
+                                        <span class="title">적용 범위</span>
+                                        <span class="content">
+                                            <div class="select_box">
+                                                <button class="label">
+                                                    <span class="text">Integer</span>
+                                                    <span class="icon icon_arrow_down"></span>
+                                                </button>
+                                                <ul class="option">
+                                                    <li class="item">All</li>
+                                                    <li class="item">String</li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                    </li>
+                                    <li class="process_method select_wrap">
+                                        <span class="title">처리 방식</span>
+                                        <span class="content">
+                                            <div class="select_box">
+                                                <button class="label">
+                                                    <span class="text">특수문자 (@)</span>
+                                                    <span class="icon icon_arrow_down"></span>
+                                                </button>
+                                                <ul class="option">
+                                                    <li class="item">특수문자 (*)</li>
+                                                    <li class="item">블랙 마스킹</li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bottom_btnlist">
+                                <button type="button" class="cancel">취소</button>
+                                <button type="button" class="application">적용</button>
+                            </div>
+                        </div>
+                        <div class="custom_setting">
+                            <h2 class="title">사용자 설정 등록</h2>
+                            <ul>
+                                <li class="custom_name input_wrap">
+                                    <span class="title">사용자 정의 명</span>
+                                    <div class="input_box">
+                                        <input type="text" placeholder="Custom">
+                                    </div>
+                                </li>
+                                <li class="detected_method select_wrap">
+                                    <span class="title">탐지 방식</span>
+                                    <span class="content">
+                                        <div class="select_box">
+                                            <button class="label">
+                                                <span class="text">패턴</span>
+                                                <span class="icon icon_arrow_down"></span>
+                                            </button>
+                                            <ul class="option">
+                                                <li class="item">패턴</li>
+                                                <li class="item">그룹어</li>
+                                            </ul>
+                                        </div>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="pattern setting_container">
+                                <h2 class="title">패턴 설정</h2>
+                                <ul>
+                                    <li class="original_data input_wrap">
+                                        <span class="title">원문</span>
+                                        <div class="input_box">
+                                            <input type="text" placeholder="23-17-019764-80">
+                                        </div>
+                                    </li>
+                                    <li class="regular_data input_wrap">
+                                        <span class="title">정규식</span>
+                                        <div class="input_box">
+                                            <input type="text" placeholder="231701976480">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="group setting_container">
+                                <h2 class="title">그룹어 설정</h2>
+                                <div class="setting_wrap">
+                                    <div class="group_list">
+                                        <div class="group_top">
+                                            <span class="text">그룹어 목록</span>
+                                            <button type="button"><span class="text">추가</span></button>
+                                        </div>
+                                        <div class="group_content">
+                                            <ul>
+                                                <li class="group_item"><span class="text">국적</span></li>
+                                                <li class="group_item active"><span class="text">직급</span></li>
+                                                <li class="group_item"><span class="text">브랜드 명</span></li>
+                                                <li class="group_item"><span class="text">성+이름</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="relationship_list">
+                                        <div class="relationship_top">
+                                            <span class=text>관계어 목록</span>
+                                            <span class=text>추가</span>
+                                        </div>
+                                        <div class="relationship_content">
+                                            <ul>
+                                                <li class="relationship_item"><span class=text>사원</span></li>
+                                                <li class="relationship_item"><span class=text>대리</span></li>
+                                                <li class="relationship_item"><span class=text>과장</span></li>
+                                                <li class="relationship_item"><span class=text>차장</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="substitute">
+                                        <span class="title">대치어</span>
+                                        <div class="input_wrap">
+                                            <input type="text" placeholder="프로">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom_btnlist">
+                                <button type="button" class="cancel">취소</button>
+                                <button type="button" class="save">저장</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="viewer_container">
+                        <p>Viewer</p>
+                    </div>
+                </div>
+            </section>
+        </main>   
+    </div> 
+</body>
+</html>
